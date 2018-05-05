@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+  <style>
+    .m-header{
+      position: relative;
+      height: 44px;
+      text-align: center;
+
+      color: royalblue;
+      font-size: 0
+    }
+
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 6px;
+      width: 30px;
+      height: 32px;
+      margin-right: 9px;
+      -webkit-background-size: 30px 32px;
+      background-size: 30px 32px;
+
+    }
+
+    .text{
+      display: inline-block;
+      vertical-align: top;
+      line-height: 44px;
+      font-size: 16px
+    }
+
+
+
+
+    .tab{
+      display: flex;
+      height: 44px;
+      line-height: 44px;
+      font-size: 14px;
+      border: 1px solid red;
+      padding: 10px;
+      margin: 20px;
+
+
+    }
+    .tab-item{
+      flex: 1;
+      text-align: center
+    }
+
+
+    .tab-link{
+      padding-bottom: 5px;
+      color: green;
+    }
+
+    .tab-link:hover{
+
+      color: blue;
+      border-bottom: 2px solid pink;
+    }
+  </style>
+</head>
+<body>
+<div class="m-header">
+
+  <div class="text">Chicken Music</div>
+</div>
+<div class="tab">
+  <div  class="tab-item" to="/recommend">
+    <span class="tab-link">推荐</span>
+  </div>
+  <div  class="tab-item" to="/singer">
+    <span class="tab-link">歌手</span>
+  </div>
+  <div class="tab-item" to="/rank">
+    <span class="tab-link">排行</span>
+  </div>
+  <div  class="tab-item" to="/search">
+    <span class="tab-link">搜索</span>
+  </div>
+
+</div>
+<script>
+  window.onload=function () {
+      console.log('onload')
+      var height = document.getElementsByClassName('tab')[0]
+    console.log(height.scrollHeight)
+  }
+
+</script>
+</body>
+</html>
